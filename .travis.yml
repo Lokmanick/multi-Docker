@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t lokmanick/multi-client ./client
-  - docker build -t lokamnick/multi-nginx ./nginx
+  - docker build -t lokmanick/multi-nginx ./nginx
   - docker build -t lokmanick/multi-server ./server
   - docker build -t lokmanick/multi-worker ./worker
   #log in to the docker CLI
